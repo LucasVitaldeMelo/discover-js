@@ -332,20 +332,70 @@ console.log('o ${name} tem ${age} anos.') |=| o Luskus tem 24 anos.
 createPhrese()
 
 ````
-## parameters
+## Example
 
 ````js
+// funtion expression
+// function anonymous
+
 const sum  = function (number1, number2) {
     console.log(number1 + number2)
 }
 
-let number11 = 5
-let number22 = 6 
+let number11 = 5 //arguments
+let number22 = 6 //   ''
 
-console.log.log(`o numero1 é ${number11}`)
-console.log.log(`o numero2 é ${number22}`)
-console.log.log(`a soma é ${sum(number11, number22)}`)
-
+console.log.log(`o numero 1 é ${number11}`) // o numero 1 é 5
+console.log.log(`o numero 2 é ${number22}`) // o numero 2 é 6
+console.log.log(`a soma é ${sum(number11, number22)}`) // a soma é 11
 ````
+````js
+//ludic mode
 
+function fazerSuco(fruta1, fruta2) { 
+    return 'suco de: ' + fruta1 + fruta2
+}
 
+const copo = fazerSuco('banana', 'maça')
+
+console.log(copo) // suco de: bananamaça
+````
+````js
+// function scope 1
+
+let subject = 'create video'
+
+function createThink(subject) {
+    subject = 'study'
+    return subject
+}
+
+console.log(subject) // 'create video'
+console.log(createThink(subject)) // 'study'
+````
+````js
+// function scope 2
+
+let subject 
+
+function createThink() {
+    subject = 'study'
+    return subject
+}
+
+console.log(subject) //undefined
+console.log(createThink()) // 'study'
+console.log(subject) // 'study'
+````
+````js
+// function scope 3
+
+let subject 
+
+function createThink() {
+    subject = 'study'
+}
+
+console.log(subject) // undefined
+console.log(createThink()) // undefined
+console.log(subject) // 'study'
