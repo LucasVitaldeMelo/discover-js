@@ -399,3 +399,31 @@ function createThink() {
 console.log(subject) // undefined
 console.log(createThink()) // undefined
 console.log(subject) // 'study'
+````
+
+````js
+// arrow function
+
+const sayMyName = (name) => {
+    console.log(name)
+}
+
+sayMyName ('luskus')
+````
+```js
+// callback function
+
+function sayMyName (name) {
+    console.log('antes de executar a função callback')
+
+    name()
+
+    console.log('depois de executar a callback')
+}
+
+sayMyName(
+    () => {
+        console.log('estou em uma callback')
+    }
+)
+```
