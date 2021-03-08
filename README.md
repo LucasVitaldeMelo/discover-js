@@ -427,3 +427,21 @@ sayMyName(
     }
 )
 ```
+# Prototype
+
+    Prototype
+
+    *prototype-based language
+    *prototype chain
+    *__proto__
+
+# Type conversion coersion
+
+*Type conversion vs Type coersion*
+
+Alteração de um tipo de dado paraoutro tipo
+
+```js
+console.log('9' + 5) // 95 = coersion 
+
+console.log(Number('9') + 5) // 14 = conversion
