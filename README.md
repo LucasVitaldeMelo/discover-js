@@ -427,7 +427,9 @@ sayMyName(
     }
 )
 ```
-# Prototype
+
+# Manipulando dados
+## Prototype
 
     Prototype
 
@@ -435,7 +437,7 @@ sayMyName(
     *prototype chain
     *__proto__
 
-# Type conversion coersion
+## Type conversion coersion
 
 *Type conversion vs Type coersion*
 
@@ -445,3 +447,25 @@ Alteração de um tipo de dado paraoutro tipo
 console.log('9' + 5) // 95 = coersion 
 
 console.log(Number('9') + 5) // 14 = conversion
+```
+
+## Manipulando Strings e Numbers
+
+Transformar String em Números e Números e Strings
+
+```js
+let string = "123"
+console.log(Number(string))
+
+let number = 321
+console.log(String(number))
+```
+## Contando caracters e digitos
+
+```js
+let word = "pneumoultramicroscopicossilicovulcanoconiótico"
+console.log(word.length)
+
+let number = 1263871491293874123497696871293874181732
+console.log(String(number).length)
+```
